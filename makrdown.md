@@ -1,8 +1,8 @@
 <p align="center">
 Кафедра АСУ<br>
-ОТЧЕТ по лабораторной работе № 2<br>
+ОТЧЕТ по лабораторной работе № 3<br>
 <br>
-По теме: язык разметки MARKDOWN<br>
+По теме: Диаграмма как код<br>
 <br>
 По дисциплине «Основы современных цифровых технологий и искусственного интеллекта»<br>
 <br>
@@ -69,6 +69,13 @@ Workflow Diagram (диаграмма рабочего процесса) — ви
 Flowchart (блок-схема алгоритма) — это подвид или базовый инструмент для Workflow Diagram: flowchart фокусируется на линейных шагах и решениях (прямоугольники, ромбы), а workflow diagram расширяет его на сложные бизнес-процессы с несколькими участниками. По ГОСТ 19.701-90 flowchart = схема алгоритма с унифицированными символами.
 
 </kbd>
+
+| Аспект     | Flowchart beslick+1​  | Workflow Diagram beslick+1​   |
+| ---------- | --------------------- | ----------------------------- |
+| Фокус      | Логика алгоритма, код | Бизнес-процессы, роли, задачи |
+| Сложность  | Простая, линейная     | Многоуровневая, с ветвлениями |
+| Символы    | Стандарт (овал, ромб) | Расширенные + swimlanes       |
+| Применение | Программирование      | Управление проектами, BPM     |
  
 <br><br>
 
@@ -93,13 +100,16 @@ Terminator в схемах алгоритмов
 
 Связь с фильмами Шварценеггера
 Фильм «The Terminator» (1984) с Арнольдом Шварценеггером взял название из sci-fi-контекста, где терминатор — машина-убийца, «завершающая» цель. 
+
 </kbd>
+
 
 <br>​<br>
 
 Блок-схема в формате XML-файла:
 
 <br>​<br>
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.7" pages="2">
@@ -160,5 +170,99 @@ Terminator в схемах алгоритмов
 
 [![](https://mermaid.ink/img/pako:eNpVkT9PwzAQxb-KdRNIaRWT_x6QaApdimDoRNLBaq5x1MaOHEelJPnuOKkQYN3gu_d774br4aAKBAbHs7ocBNeG7Na5JPY9ZanQVWtq3u7JYvE4bNCQWkm8DmR1t1GkFappKlne3_jVBJG0304YEiMqeRpvUjr73yQOZJ1teWNUs_-r7C5qIM9Z9S5s_H9FaLSul-zI2ZEvDlyTlOsZAQdKXRXAjO7QgRp1zacW-knNwQisMQdmvwXXpxxyOVpPw-WHUvWPTauuFGCzz63tuqbgBtcVLzX_RVAWqFPVSQMs9OcIYD18AqNRsAxiP_aSJKLU9WLPgasdu_7ygdLAj9wgsZXQ0YGveau7DKkXhT5NktiNwzCMHcCiMkq_3g4x32P8BomEfH4?type=png)](https://mermaid.live/edit#pako:eNpVkT9PwzAQxb-KdRNIaRWT_x6QaApdimDoRNLBaq5x1MaOHEelJPnuOKkQYN3gu_d774br4aAKBAbHs7ocBNeG7Na5JPY9ZanQVWtq3u7JYvE4bNCQWkm8DmR1t1GkFappKlne3_jVBJG0304YEiMqeRpvUjr73yQOZJ1teWNUs_-r7C5qIM9Z9S5s_H9FaLSul-zI2ZEvDlyTlOsZAQdKXRXAjO7QgRp1zacW-knNwQisMQdmvwXXpxxyOVpPw-WHUvWPTauuFGCzz63tuqbgBtcVLzX_RVAWqFPVSQMs9OcIYD18AqNRsAxiP_aSJKLU9WLPgasdu_7ygdLAj9wgsZXQ0YGveau7DKkXhT5NktiNwzCMHcCiMkq_3g4x32P8BomEfH4)
 
+<br><br>
+
+Сохранил диаграмму в формате SVG
+
+<br><br>
+
+![Диаграмма](https://raw.githubusercontent.com/halilovilsur26-code/laba/58fbf6312039e5e2b299510b87f208df575584c3/mermaid-diagram-2025-12-15-220142.svg)
+
+Копировал схему в буфер обмена и вставил в Word:
+
+<img width="1687" height="1005" alt="Снимок экрана 2025-12-15 220644" src="https://github.com/user-attachments/assets/c9a3187b-d035-4aa4-862e-50324060e99a" />
+
+<br><br>
+
+Затем вставил в Paint:
+<img width="1920" height="1032" alt="Снимок экрана 2025-12-15 220904" src="https://github.com/user-attachments/assets/16176383-296c-45d1-8a02-05ce4aee7d12" />
+
+<br><br>
+
+Вставил в Google Colab MD ссылку:
+
+<img width="951" height="867" alt="Снимок экрана 2025-12-15 221239" src="https://github.com/user-attachments/assets/043ea72b-125c-4874-8af7-243c1dadd004" />
+
+Вставка диаграммы в файл MD
+```mermaid
+flowchart
+  A([Начало]) --> B[/Ввод числа X/]
+    B --> C{X > 0?}
+    C -- Да --> D[/Вывод "Положительное"/]
+    C -- Нет --> E[/Вывод "Неположительное"/]
+    D --> F([Конец])
+    E --> F
+```
+
+<br><br>
+
+
+<img width="598" height="500" alt="Снимок экрана 2025-12-15 223220" src="https://github.com/user-attachments/assets/d317f42d-b10b-41f9-9c66-7220473bdebe" />
+
+<br><br>
+
+Ссылка для вывода моей диаграммы 
+![Диаграмма](https://mermaid.ink/img/Zmxvd2NoYXJ0IFRECiAgICBBKFrQodC10LrRgdGC0LDQvdC40Y8pKSAuLS0gQltTZXJlZGluaV0gLS0+IEMoW9Cg0L7RhdCw0LvRj10pKQ==)
+
+<br><br> 
+
+base64 в википедии 
+
+<br><br>
+
+<kbd>
+Base64 — стандарт кодирования двоичных данных при помощи только 64 символов ASCII. Алфавит кодирования содержит латинские символы A-Z, a-z, цифры 0-9 (всего 62 знака) и 2 дополнительных символа, зависящих от системы реализации. Каждые 3 исходных байта кодируются четырьмя символами (увеличение на ¹⁄₃).
+
+Эта система широко используется в электронной почте для представления бинарных файлов в тексте письма (транспортное кодирование).
+</kbd>
+
+<br><br>
+
+Вставил в VSCode код диаграммы:
+<img width="1615" height="940" alt="Снимок экрана 2025-12-16 000814" src="https://github.com/user-attachments/assets/b41cbaf0-e710-490c-855f-7a443192357f" />
+
+<br><br>
+
+Запустил контейнер в Docker
+
+<img width="888" height="443" alt="Снимок экрана 2025-12-16 001146" src="https://github.com/user-attachments/assets/40cb8001-ad98-41df-b933-0dac458540c7" />
+
+<br><br>
+
+Посмотрел статью Mind map на википедии:
+<img width="716" height="588" alt="Снимок экрана 2025-12-16 001557" src="https://github.com/user-attachments/assets/8d9eee01-dc85-4a98-bafc-9ea837f86f28" />
+
+<br><br>
+
+Посмотрел статью PlantUML на википедии:
+<img width="916" height="908" alt="Снимок экрана 2025-12-16 001956" src="https://github.com/user-attachments/assets/3296756c-8f31-46c1-a784-6064dbc718bf" />
+
+<br><br>
+
+PlantUML поддерживают не только отдельные программы, но и много платформ/сервисов.
+
+## IDE и редакторы кода
+- IntelliJ IDEA / PyCharm / WebStorm через плагины PlantUML.  
+- Visual Studio Code (расширение “PlantUML”).  
+- Atom / Sublime Text через соответствующие плагины.
+
+## Веб‑платформы и онлайн‑редакторы
+- Официальный PlantUML Web Server и онлайн‑редактор PlantText.  
+- Miro (онлайн‑доска) имеет встроенный редактор диаграмм из PlantUML‑кода.  
+- Confluence, DokuWiki, MediaWiki через плагины для вики‑страниц.
+
+## Инструменты документации и прочее
+- Doxygen (генерация диаграмм из кода).  
+- Различные CI/док‑генераторы, которые рендерят `.puml` в PNG/SVG и встраивают в HTML/Markdown‑документацию.
 
 
